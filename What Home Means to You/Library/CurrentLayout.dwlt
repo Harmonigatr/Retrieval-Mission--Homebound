@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 524}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
     y: 0
     width: 1024
     height: 685
-  m_MinSize: {x: 950, y: 524}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 474}
   m_MaxSize: {x: 14002, y: 14024}
   vertical: 0
-  controlID: 10539
+  controlID: 51
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 474}
   m_MaxSize: {x: 10000, y: 14024}
   vertical: 1
-  controlID: 10507
+  controlID: 32
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 10508
+  controlID: 33
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -328,25 +328,25 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-      width: 1028
-      height: 599
-    m_Scale: {x: 0.77994794, y: 0.77994794}
-    m_Translation: {x: 514, y: 299.5}
+      width: 537
+      height: 320
+    m_Scale: {x: 0.41666666, y: 0.41666666}
+    m_Translation: {x: 268.5, y: 160}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -659.0184
+      x: -644.4
       y: -384
-      width: 1318.0367
+      width: 1288.8
       height: 768
     m_MinimalGUI: 1
-  m_defaultScale: 0.77994794
+  m_defaultScale: 0.41666666
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 1028, y: 616}
+  m_LastWindowPixelSize: {x: 537, y: 337}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -380,9 +380,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: bac7ffffdcdfffffacf5ffffd4fbffffec330000
+      m_SelectedIDs: 24f0ffff7ef0ffffe2f0ffff28f1ffff
+      m_LastClickedID: -3800
+      m_ExpandedIDs: caf7ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -437,9 +437,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 7.773162, y: -2.5394464, z: -0.0805722}
+    m_Target: {x: 4.807583, y: -1.0758637, z: -0.0703125}
     speed: 2
-    m_Value: {x: 7.773162, y: -2.5394464, z: -0.0805722}
+    m_Value: {x: 4.807583, y: -1.0758637, z: -0.0703125}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -471,9 +471,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 9.060269
+    m_Target: 8.442728
     speed: 2
-    m_Value: 9.060269
+    m_Value: 8.442728
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -523,11 +523,11 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Images/TIlemaps/Bricks/Textures
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Images/TIlemaps/Bricks/Textures
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\scary\Documents\GitHub\Retrieval-Mission--Homebound\What
     Home Means to You
@@ -535,9 +535,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fe0c0000
-    m_LastClickedID: 3326
-    m_ExpandedIDs: 00000000340a0000fa0c0000fe0c0000a41200000434000000ca9a3b
+    m_SelectedIDs: 9c310000
+    m_LastClickedID: 12700
+    m_ExpandedIDs: 00000000c42700006a2a00007e2a0000822a0000ea2a00001a300000d833000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -565,7 +565,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000340a0000fa0c0000fe0c0000a41200000434000000ca9a3b
+    m_ExpandedIDs: 00000000c42700007e2a0000822a00001a300000d8330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
