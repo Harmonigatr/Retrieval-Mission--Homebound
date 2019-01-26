@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/KidRoom.unity
+- path: Assets/Scenes/Sibroom.unity
   isLoaded: 1
   isActive: 1
