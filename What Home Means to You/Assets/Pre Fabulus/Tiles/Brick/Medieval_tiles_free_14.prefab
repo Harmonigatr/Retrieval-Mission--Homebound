@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 8015842740871716184}
   - component: {fileID: 440330455797346450}
   - component: {fileID: 2092821023693127585}
-  - component: {fileID: 3069960179135284640}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Medieval_tiles_free_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,24 +98,3 @@ EdgeCollider2D:
   m_Points:
   - {x: -0.47762847, y: -0.4921749}
   - {x: 0.49697036, y: 0.4879101}
---- !u!50 &3069960179135284640
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4611145104980585317}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0

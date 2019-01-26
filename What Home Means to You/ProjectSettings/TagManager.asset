@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - floor
   - 
   - 
   - 
@@ -41,6 +41,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Platforms
+  - name: Floor
     uniqueID: 3083414979
     locked: 0

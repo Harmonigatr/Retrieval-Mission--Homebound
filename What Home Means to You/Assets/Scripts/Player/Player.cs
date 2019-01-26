@@ -6,22 +6,13 @@ public class Player : MonoBehaviour
 {
 
 
-    public float jump;
-    public float speed;
-    public bool isGrounded;
-    public Transform groundCheck;
-    public float groundCheckRadious;
+    public float speed,
+                  groundCheckRadious;
     public LayerMask isGroundedLayer;
-    private float jumpHeight = 5;
-   
-    Rigidbody2D rb;
-
-    Animator anim;
-
-
-    // Start is called before the first frame update
-
     private Rigidbody2D rb2d;
+    private float jumpHeight = 5,
+                  movement;
+    private bool isGrounded;
 
     void Start()
     {
@@ -30,17 +21,15 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-      float moveHorizontal = Input.GetAxis("Horizontal");
-        float Virt = Input.GetAxis("Horizontal");
+        isGrounded = Physics2D.OverlapArea(new Vector2(transform.position.x - groundCheckRadious, transform.position.y - groundCheckRadious),
+                     new Vector2(transform.position.x + groundCheckRadious, transform.position.y - groundCheckRadious), isGroundedLayer);
 
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
-        }
+        movement = Mathf.Lerp(rb2d.velocity.x, Input.GetAxis("Horizontal") * speed * Time.deltaTime, Time.deltaTime * 10);
+        rb2d.velocity = new Vector2(movement, rb2d.velocity.y);
 
-        Vector2 movement = new Vector2(moveHorizontal,Virt);
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+            rb2d.AddForce(Vector2.up * jumpHeight, ForceMode2D.Impulse);
 
-       rb2d.AddForce(movement * speed);
     }
 }
 
