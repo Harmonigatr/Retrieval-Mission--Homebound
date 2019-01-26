@@ -2,11 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
-[RequireComponent(typeof(Rigidbody2D))]
-
-public class Character : MonoBehaviour
+public class Player : MonoBehaviour
 {
 
 
@@ -16,72 +12,35 @@ public class Character : MonoBehaviour
     public Transform groundCheck;
     public float groundCheckRadious;
     public LayerMask isGroundedLayer;
-
-
+    private float jumpHeight = 5;
+   
     Rigidbody2D rb;
 
     Animator anim;
 
 
     // Start is called before the first frame update
+
+    private Rigidbody2D rb2d;
+
     void Start()
     {
-        if (!groundCheck)
-        {
-            groundCheck = GameObject.Find("GroundCheck").GetComponent<Transform>();
-
-        }
-        if (groundCheckRadious <= 0)
-        {
-            groundCheckRadious = 0.1f;
-
-        }
-
-        anim = GetComponent<Animator>();
-
-        if (!anim)
-        {
-            Debug.LogError("Animation not working");
-
-        }
-
-        rb = GetComponent<Rigidbody2D>();
-        rb.mass = 1.0f;
-        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-        rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
-        rb.sleepMode = RigidbodySleepMode2D.NeverSleep;
-        if (speed <= 0 || speed > 5.0f)
-        {
-
-            speed = 5.0f;
-        }
-        if (jump <= 0 || jump > 10.0f)
-            jump = 10.0f;
-
+        rb2d = GetComponent<Rigidbody2D>();
     }
 
-
-    // Update is called once per frame
     void Update()
     {
-        float moveValue = Input.GetAxisRaw("Horizontal");
-        if (groundCheck)
-        {
-            isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadious, isGroundedLayer);
-        }
-        if (isGrounded)
-        {
+      float moveHorizontal = Input.GetAxis("Horizontal");
+        float Virt = Input.GetAxis("Horizontal");
 
-            anim.SetBool("grounded", isGrounded);
-
-            if (Input.GetButtonDown("Jump"))
-            {
-                rb.AddForce(Vector2.up * jump, ForceMode2D.Impulse);
-            }
-            rb.velocity = new Vector2(moveValue * speed, rb.velocity.y);
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
         }
-        if (anim)
-            anim.SetFloat("Movment", Mathf.Abs(moveValue));
-        anim.SetBool("Grounded", isGrounded);
+
+        Vector2 movement = new Vector2(moveHorizontal,Virt);
+
+       rb2d.AddForce(movement * speed);
     }
 }
+
