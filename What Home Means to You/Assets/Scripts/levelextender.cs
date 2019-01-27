@@ -25,8 +25,8 @@ public class levelextender : MonoBehaviour
         if (counter < order.Length - 1)
         {
             GameObject clone = Instantiate(sets[order[counter]]) as GameObject;
-            Transform enddif = sets[order[counter - 1]].transform.Find("end"),
-                      startdif = clone.transform.Find("start");
+            Transform enddif = sets[order[counter - 1]].transform.Find("End"),
+                      startdif = clone.transform.Find("Start");
             float lol = (enddif.position.y - sets[order[counter - 1]].transform.position.y);
             float lo1 = (startdif.transform.position.y - clone.transform.position.y);
             clone.transform.SetParent(transform);
