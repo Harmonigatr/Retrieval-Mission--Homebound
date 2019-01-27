@@ -222,6 +222,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   Health: 10
+  armour: 0
+  shield: 0
   speed: 250
   groundCheckRadious: 0.5
   isGroundedLayer:
@@ -272,7 +274,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3, y: 1}
+  m_Size: {x: 0.28, y: 0.94}
   m_EdgeRadius: 0
 --- !u!95 &42858399
 Animator:
@@ -1413,6 +1415,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1146507498319596570, guid: d6f5110a855d57f4f877057505be978e,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146507498319596570, guid: d6f5110a855d57f4f877057505be978e,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.36
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6f5110a855d57f4f877057505be978e, type: 3}
 --- !u!1001 &883003596
@@ -1680,7 +1692,7 @@ PrefabInstance:
     - target: {fileID: 8180164942309809153, guid: d6f5110a855d57f4f877057505be978e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2108941
+      value: 1.211894
       objectReference: {fileID: 0}
     - target: {fileID: 8180164942309809153, guid: d6f5110a855d57f4f877057505be978e,
         type: 3}
@@ -1997,6 +2009,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146507498319596570, guid: d6f5110a855d57f4f877057505be978e,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146507498319596570, guid: d6f5110a855d57f4f877057505be978e,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.27
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6f5110a855d57f4f877057505be978e, type: 3}

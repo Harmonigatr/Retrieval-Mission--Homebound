@@ -1041,7 +1041,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3, y: 1}
+  m_Size: {x: 0.28, y: 0.94}
   m_EdgeRadius: 0
 --- !u!50 &612054317
 Rigidbody2D:
@@ -1078,6 +1078,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   Health: 10
+  armour: 0
+  shield: 0
   speed: 250
   groundCheckRadious: 0.5
   isGroundedLayer:
@@ -1872,9 +1874,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44f04ddbc7681c340880bdc92bfa101f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  set1: {fileID: 0}
-  set2: {fileID: 1488082917}
-  cam: {fileID: 1819261342}
+  order: 
+  sets: []
+  genPoint: {fileID: 0}
 --- !u!4 &987804697
 Transform:
   m_ObjectHideFlags: 0

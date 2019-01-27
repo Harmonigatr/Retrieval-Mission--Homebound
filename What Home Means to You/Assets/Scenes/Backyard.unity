@@ -316,7 +316,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3, y: 1}
+  m_Size: {x: 0.28, y: 0.94}
   m_EdgeRadius: 0
 --- !u!50 &62047756
 Rigidbody2D:
@@ -353,6 +353,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 0
   Health: 10
+  armour: 0
+  shield: 0
   speed: 250
   groundCheckRadious: 0.5
   isGroundedLayer:
