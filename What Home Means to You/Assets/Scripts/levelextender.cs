@@ -4,33 +4,33 @@ using UnityEngine;
 
 public class levelextender : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public Transform set1,
-                     set2,
-                     cam;
-    private bool set = true;
-    private float currSpot = 0;
+    public int[] order;
+    public GameObject[] sets;
+    public Transform genPoint;
+    private GameObject clone;
+    private float spawn = 0.0f;
+    private int counter = 0;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        if (currSpot < cam.position.x)
+        clone = Instantiate(sets[0]) as GameObject;
+        clone.transform.SetParent(transform);
+    }
+
+    private void Update()
+    {
+        /*if (clone.transform.position.x < genPoint.position.x  && counter < order.Length){
+            clone = Instantiate(clone) as GameObject;
+            clone.transform.SetParent(transform);
+            clone.transform.position = new Vector2(Vector2.right.x * spawn, transform.position.y);
+            spawn += sets[#].GetComponent<BoxCollider2D>().size.x;
+        }*/
+        if (counter < order.Length)
         {
-            if (set)
-                set1.localPosition = new Vector3(set1.localPosition.x + 30, 0, 10);
-            else
-                set2.localPosition = new Vector3(set2.localPosition.x + 15, 0, 10);
-            currSpot += 15;
-            set = !set;
-        }
-        if (currSpot > cam.position.x + 15)
-        {
-            if (set)
-                set2.localPosition = new Vector3(set2.localPosition.x + 15, 0, 10);
-            else
-                set1.localPosition = new Vector3(set1.localPosition.x + 30, 0, 10);
-            currSpot -= 15;
-            set = !set;
+            clone = Instantiate(sets[order[counter]]) as GameObject;
+            clone.transform.SetParent(transform);
+            clone.transform.position = new Vector2(Vector2.right.x * spawn, transform.position.y);
+            spawn += sets[order[counter++]].GetComponent<BoxCollider2D>().size.x;
         }
     }
 }
