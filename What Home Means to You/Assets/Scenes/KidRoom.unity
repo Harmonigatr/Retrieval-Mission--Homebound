@@ -206,7 +206,7 @@ Transform:
   m_Children:
   - {fileID: 733841186}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &42858396
 MonoBehaviour:
@@ -358,7 +358,7 @@ Transform:
   - {fileID: 2027604753}
   - {fileID: 1108454241}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &97872642 stripped
 Transform:
@@ -1504,6 +1504,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   damage: 1
+  timer: 0
+  speed: 250
+  bob: 0
 --- !u!61 &886056093
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1632,7 +1635,7 @@ PrefabInstance:
     - target: {fileID: 3789727999168020692, guid: d52868d1093be2a41a6e365c40a59727,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3789727999168020692, guid: d52868d1093be2a41a6e365c40a59727,
         type: 3}
@@ -2301,6 +2304,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   damage: 1
+  timer: 0
+  speed: 250
+  bob: 0
 --- !u!61 &1322874417
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2481,6 +2487,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   damage: 1
+  timer: 0
+  speed: 250
+  bob: 0
 --- !u!61 &1397396945
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3583,6 +3592,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   damage: 1
+  timer: 0
+  speed: 250
+  bob: 0
 --- !u!61 &1876059292
 BoxCollider2D:
   m_ObjectHideFlags: 0
