@@ -18,13 +18,12 @@ public class Player : MonoBehaviour
                   movement;
     private bool isGrounded,
                  toRight = true;
-   private bool[] items; //0 oldBlanket,   //1 flashLight,
+   private bool[] items; //0 oldBlanket, 
                          //2 spade,        //3 cellphone,
-                         //4 attic,        //5 GOAL,
-                         //6 slingShot,    //7 garrage,
-                         //8 baterie1,     //9 baterie2,
-                         //10baterie3,     //11umbrella,
-                        //12animalFood;
+                         //5 GOAL,          //4 strainer,
+                         //6 slingShot,      
+                         //11umbrella,
+                        
 
 
     void Start()
@@ -35,6 +34,19 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+
+        if (items[0] != null && items[0])
+            jumpHeight = 10;
+
+        if (items[2] != null && items[2])
+            damage = 3;
+        if (items[11] != null && items[11])
+            shield = 5;
+        if (items[4] != null && items[4])
+            armour = 3;
+        if (items[5] != null && items[5])
+            jumpHeight = 10;
+
         if (transform.position.y <= -20 || Health <= 0) {
             Application.LoadLevel("GameOver");
         }
@@ -54,9 +66,12 @@ public class Player : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
+       
+
+
         if (other.gameObject.tag == "Mob")
         {
-           Health -= other.GetComponent<Enemy>().damage;
+           Health -= (other.GetComponent<Enemy>().damage-(armour + shield));
         }
     }
 
