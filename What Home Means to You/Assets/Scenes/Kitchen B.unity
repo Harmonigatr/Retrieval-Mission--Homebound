@@ -934,7 +934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 522447388}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Kitchen C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -948,7 +948,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522447387}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.807597, y: -0.2879591, z: 0.06787141}
+  m_LocalPosition: {x: -6.3799996, y: -7.56, z: -0.081542924}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 211341016}
@@ -968,8 +968,8 @@ Transform:
   - {fileID: 1158337366}
   - {fileID: 214032870}
   - {fileID: 85057657}
-  m_Father: {fileID: 987804697}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &539739144 stripped
 Transform:
@@ -1845,56 +1845,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 966293398}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &987804695
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 987804697}
-  - component: {fileID: 987804696}
-  m_Layer: 0
-  m_Name: Maps
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &987804696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 987804695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44f04ddbc7681c340880bdc92bfa101f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  order: 
-  sets: []
-  genPoint: {fileID: 0}
---- !u!4 &987804697
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 987804695}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.4275975, y: -7.272041, z: -0.14941433}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 522447388}
-  - {fileID: 1222050867}
-  - {fileID: 998995058}
-  - {fileID: 1488082917}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &998995057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1919,16 +1869,16 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 998995057}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2156734, y: -64.94459, z: 0.14941433}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 13.772749, y: -115.7624, z: 0.6234852}
+  m_LocalScale: {x: 2.2129967, y: 1.8050543, z: 1}
   m_Children:
   - {fileID: 704045028}
   - {fileID: 1771360927}
   - {fileID: 1564472911}
   - {fileID: 711565147}
   - {fileID: 1660573313}
-  m_Father: {fileID: 987804697}
-  m_RootOrder: 2
+  m_Father: {fileID: 1222050867}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1037414554
 PrefabInstance:
@@ -2320,7 +2270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1222050867}
   m_Layer: 0
-  m_Name: GameObject (2)
+  m_Name: Kitchen A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2334,7 +2284,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222050866}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.0079007, y: -0.8122287, z: -0.47407088}
+  m_LocalPosition: {x: -0.5803032, y: -8.08427, z: -0.6234852}
   m_LocalScale: {x: 0.45187595, y: 0.55399996, z: 1}
   m_Children:
   - {fileID: 487424906}
@@ -2346,8 +2296,9 @@ Transform:
   - {fileID: 1956488565}
   - {fileID: 539739144}
   - {fileID: 2138624185}
-  m_Father: {fileID: 987804697}
-  m_RootOrder: 1
+  - {fileID: 998995058}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1229381262
 PrefabInstance:
@@ -3177,7 +3128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1488082917}
   m_Layer: 0
-  m_Name: Tiles
+  m_Name: Kitchen B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3191,7 +3142,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488082916}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.5403452, y: 6.685908, z: -0.6074216}
+  m_LocalPosition: {x: 0.88725233, y: -0.586133, z: -0.75683594}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1316349738}
@@ -3207,7 +3158,7 @@ Transform:
   - {fileID: 662649691}
   - {fileID: 2134755361}
   - {fileID: 2079838620}
-  m_Father: {fileID: 987804697}
+  m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1564472910
