@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/KidRoom.unity
     guid: d80c2f8b778ff024c8e3afaca672de7b
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: fcbc25e06c9bda54b9c5b42f1391f0ff
   m_configObjects: {}

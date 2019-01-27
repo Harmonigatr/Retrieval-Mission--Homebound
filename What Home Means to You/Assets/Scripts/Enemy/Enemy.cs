@@ -2,17 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BStats : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     //GameObject enemy;
-    public int health;
+    public int health = 2,damage=1;
+   
+    
 
-    //hen enemy health is x do y
+    //when enemy health is x do y
     private void Update()
     {
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
+        }
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            health -= other.GetComponent<Player>().damage;
+
+
+
         }
     }
 }

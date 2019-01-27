@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-
+    public int damage = 1,
+               Health = 10;
     private SpriteRenderer SprtRndrr;
     public float speed,
+                   
                   groundCheckRadious;
     public LayerMask isGroundedLayer;
     private Rigidbody2D rb2d;
@@ -14,6 +17,14 @@ public class Player : MonoBehaviour
                   movement;
     private bool isGrounded,
                  toRight = true;
+   private bool[] items; //0 oldBlanket,   //1 flashLight,
+                         //2 spade,        //3 cellphone,
+                         //4 attic,        //5 GOAL,
+                         //6 slingShot,    //7 garrage,
+                         //8 baterie1,     //9 baterie2,
+                         //10baterie3,     //11umbrella,
+                        //12animalFood;
+
 
     void Start()
     {
@@ -36,6 +47,27 @@ public class Player : MonoBehaviour
             toRight = !toRight;
             SprtRndrr.flipX = !SprtRndrr.flipX;
         }
+        if (transform.position.y <= -20)
+        {
+
+            Application.LoadLevel("GameOver");
+        }
     }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Mob")
+        {
+           Health -= other.GetComponent<Enemy>().damage;
+
+
+
+        }
+        if (Health <=0)
+        {
+            Application.LoadLevel("GameOver");
+
+        }
+    }
+
 }
 
