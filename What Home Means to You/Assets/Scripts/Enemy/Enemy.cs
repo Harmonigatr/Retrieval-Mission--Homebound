@@ -26,5 +26,9 @@ public class Enemy : MonoBehaviour
 
 
         }
+        if (other.gameObject.tag == "project")
+        {
+            health -= other.GetComponent<bullet>().damage;
+        }
     }
 }
