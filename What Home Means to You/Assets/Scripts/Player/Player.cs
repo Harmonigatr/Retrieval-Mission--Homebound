@@ -34,6 +34,9 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if (transform.position.y <= -20 || Health <= 0) {
+            Application.LoadLevel("GameOver");
+        }
         isGrounded = Physics2D.OverlapArea(new Vector2(transform.position.x - groundCheckRadious, transform.position.y - groundCheckRadious),
                      new Vector2(transform.position.x + groundCheckRadious, transform.position.y - groundCheckRadious), isGroundedLayer);
 
@@ -47,25 +50,12 @@ public class Player : MonoBehaviour
             toRight = !toRight;
             SprtRndrr.flipX = !SprtRndrr.flipX;
         }
-        if (transform.position.y <= -20)
-        {
-
-            Application.LoadLevel("GameOver");
-        }
     }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Mob")
         {
            Health -= other.GetComponent<Enemy>().damage;
-
-
-
-        }
-        if (Health <=0)
-        {
-            Application.LoadLevel("GameOver");
-
         }
     }
 
